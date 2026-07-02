@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="brand">
           <p className="logo">WES PCS</p>
           <p className="tagline">Custom gaming PCs, hand-built in the UK.</p>
-          <a href="mailto:wespcs@gmail.com" className="email">wespcs@gmail.com</a>
+          <a href="mailto:thomasbaratti2@gmail.com" className="email">thomasbaratti2@gmail.com</a>
         </div>
 
         <div className="cols">

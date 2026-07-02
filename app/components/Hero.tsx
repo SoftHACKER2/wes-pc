@@ -28,6 +28,12 @@ export default function Hero() {
         <p className="trust">50+ builds · UK based · Fast shipping</p>
       </div>
 
+      <div className="scrollHint">
+        <span className="arrow">↓</span>
+        <span className="scrollText">scroll down</span>
+        <span className="arrow">↓</span>
+      </div>
+
       <style jsx>{`
         /* ── Mobile base ─────────────────────── */
         .hero {
@@ -136,6 +142,36 @@ export default function Hero() {
           color: #333;
           letter-spacing: 0.5px;
           animation: fadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.52s both;
+        }
+
+        .scrollHint {
+          position: absolute;
+          bottom: 28px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          animation: fadeIn 1s ease 1.1s both;
+        }
+
+        .scrollText {
+          font-size: 10px;
+          font-weight: 600;
+          color: #333;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
+
+        .arrow {
+          font-size: 12px;
+          color: #333;
+          animation: bounce 1.8s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(4px); }
         }
 
         /* ── Desktop overrides ───────────────── */
