@@ -284,6 +284,11 @@ export default function ConfiguratorPage() {
                 </div>
               </div>
 
+              <div className="payInfo">
+                <span>🔒</span>
+                <p>No payment now — we&apos;ll contact you to confirm everything first. Pay via <strong>PayPal</strong> (buyer protected) or bank transfer.</p>
+              </div>
+
               {error && <p className="errorMsg">{error}</p>}
 
               <div className="navBtns">
@@ -603,6 +608,21 @@ export default function ConfiguratorPage() {
           color: #fff;
           font-weight: 600;
         }
+
+        .payInfo {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          padding: 16px 18px;
+          background: rgba(255,255,255,0.02);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 12px;
+          font-size: 13px;
+          color: #555;
+          line-height: 1.55;
+        }
+
+        .payInfo strong { color: #888; }
 
         .errorMsg {
           color: #ff6b6b;
