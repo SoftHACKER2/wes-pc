@@ -1,6 +1,7 @@
 export const builds = [
   {
     id: "budget",
+    image: "/budget-killer.png",
     name: "Budget Killer",
     tagline: "Smooth 1080p gaming without breaking the bank.",
     price: "£799",
@@ -18,10 +19,11 @@ export const builds = [
       gta: "90–120 FPS",
     },
     description:
-      "Perfect for competitive gaming at 1080p. Handles Fortnite, Valorant, CS2, and Apex Legends without breaking a sweat.",
+      "The Budget Killer is built for one thing: maximum performance at 1080p without wasting money on parts you don't need. The AMD Ryzen 5 5500 delivers fast, consistent frame times for competitive titles, while the RX 7600 8GB crushes Fortnite, Warzone, Valorant, CS2, and Apex Legends at high settings with frames to spare. With 16GB of DDR4 RAM and a 512GB NVMe SSD, load times are fast and multitasking is smooth. Every part is hand-picked for value — no bloat, no filler. This is the PC we'd build for our own little brother.",
   },
   {
     id: "mid",
+    image: null,
     name: "Best Price for Quality",
     tagline: "The sweet spot. Most of our customers choose this one.",
     price: "£1,200",
@@ -39,10 +41,11 @@ export const builds = [
       gta: "140–180 FPS",
     },
     description:
-      "The build most of our customers go with. Plays everything at 1440p ultra settings with headroom for streaming.",
+      "This is the build most of our customers end up with — and for good reason. The RTX 5060 Ti paired with the Ryzen 5 5600X hits a sweet spot that more expensive builds can't justify. You're getting smooth 1440p gaming at ultra settings, DLSS 4 with Multi Frame Generation for a serious FPS boost, and 32GB of DDR4 RAM that gives you headroom for streaming, editing, and having Chrome open with 40 tabs. The 1TB NVMe SSD keeps everything snappy. Whether you're grinding ranked on Warzone, streaming on Twitch, or just want a machine that handles everything you throw at it — this is the one.",
   },
   {
     id: "high",
+    image: null,
     name: "Gaming Beast",
     tagline: "High FPS 1440p and silky smooth 4K.",
     price: "£1,600",
@@ -60,27 +63,28 @@ export const builds = [
       gta: "170–240 FPS",
     },
     description:
-      "Serious firepower for high-refresh 1440p and smooth 4K. Built for competitive players who refuse to compromise.",
+      "The Gaming Beast is for people who refuse to compromise. The AMD Ryzen 7 7700X is one of the strongest gaming CPUs on the market, and paired with the RX 9060 XT 16GB you're getting buttery smooth 1440p at maximum settings and very capable 4K performance. The Arctic 360mm AIO liquid cooler keeps everything running cool and quiet under full load, and the Lian Li O11 case makes this build look as good as it performs. With 32GB of DDR5 RAM and a 1TB Gen4 NVMe SSD, there's no bottleneck anywhere in this system. This is the PC for serious gamers who want to win — at any resolution.",
   },
   {
     id: "extreme",
+    image: null,
     name: "Ultimate Machine",
     tagline: "No limits. No compromises. Maximum everything.",
     price: "£2,400",
     priceNum: 2400,
     badge: "Top Tier",
-    cpu: "AMD Ryzen 9 7950X3D",
-    gpu: "RTX 4090 24GB",
-    ram: "64GB DDR5 6000MHz",
-    storage: "4TB NVMe SSD",
+    cpu: "AMD Ryzen 7 9800X3D",
+    gpu: "RX 9070 XT 16GB",
+    ram: "32GB DDR5 6000MHz",
+    storage: "2TB NVMe SSD",
     cooling: "360mm AIO Liquid Cooler",
-    resolution: "4K / 8K",
+    resolution: "4K",
     fps: {
-      fortnite: "400–500+ FPS",
-      warzone: "250–320 FPS",
-      gta: "300–380 FPS",
+      fortnite: "300–400 FPS",
+      warzone: "180–240 FPS",
+      gta: "220–300 FPS",
     },
     description:
-      "The absolute best. Built for 4K gaming, heavy streaming, video editing, and any workload you can throw at it.",
+      "The Ultimate Machine is exactly what it sounds like. Built around the AMD Ryzen 7 9800X3D — the single best gaming CPU in the world right now — and the RX 9070 XT 16GB, this system destroys everything at 4K. We're talking 300+ FPS in Fortnite, silky smooth 4K in every AAA title, and enough headroom to stream, record, and edit at the same time without breaking a sweat. The Asus ROG STRIX B850-A motherboard and 32GB of DDR5 6000MHz RAM ensure there is zero bottleneck anywhere. The 2TB WD Black NVMe SSD stores your entire game library with room to spare. Housed in the stunning Lian Li O11 Vision case with a 360mm AIO and full cable management — this build doesn't just perform like a beast, it looks like one too.",
   },
 ];

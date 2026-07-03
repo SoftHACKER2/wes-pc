@@ -2,6 +2,7 @@
 
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import Image from "next/image";
 import { builds } from "../data/builds";
 import useScrollReveal from "../components/useScrollReveal";
 import { useCart } from "../context/CartContext";
@@ -40,6 +41,13 @@ export default function BuildsPage() {
 
               {b.badge === "Most Popular" && <div className="popularBadge">★ Most Popular</div>}
               {b.badge === "Top Tier" && <div className="topBadge">Top Tier</div>}
+
+              {/* Image */}
+              {b.image && (
+                <div className="imgWrap">
+                  <Image src={b.image} alt={b.name} fill style={{ objectFit: "contain" }} />
+                </div>
+              )}
 
               {/* Top row: name + price */}
               <div className="cardHead">
@@ -139,6 +147,15 @@ export default function BuildsPage() {
         .list {
           display: flex; flex-direction: column;
           gap: 20px; margin-bottom: 48px;
+        }
+
+        .imgWrap {
+          position: relative;
+          width: 100%;
+          height: 160px;
+          border-radius: 10px;
+          overflow: hidden;
+          background: #fff;
         }
 
         /* Card */
