@@ -8,6 +8,13 @@ export default function Hero() {
       <div className="glow" aria-hidden="true" />
 
       <div className="content">
+        <div className="trustBanner">
+          <span className="dot" />
+          <span>Trusted by 50+ UK gamers</span>
+          <span className="sep">·</span>
+          <span>⭐⭐⭐⭐⭐ 5 star rated</span>
+        </div>
+
         <p className="tag">PREMIUM CUSTOM GAMING PCS · UK BUILT</p>
 
         <h1>
@@ -36,6 +43,31 @@ export default function Hero() {
 
       <style jsx>{`
         /* ── Mobile base ─────────────────────── */
+
+        .trustBanner {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: 50px;
+          padding: 7px 14px;
+          font-size: 11px;
+          color: #777;
+          font-weight: 500;
+          margin-bottom: 18px;
+          animation: fadeUp 0.7s cubic-bezier(0.16,1,0.3,1) 0.0s both;
+        }
+
+        .dot {
+          width: 6px; height: 6px;
+          background: #25D366;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
+
+        .sep { color: #333; }
+
         .hero {
           min-height: 100svh; /* svh = safe viewport height on iOS */
           display: flex;
