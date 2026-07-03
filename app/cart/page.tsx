@@ -60,8 +60,6 @@ export default function CartPage() {
                   <span className="totalNum">£{total.toLocaleString()}</span>
                 </div>
 
-                <p className="payTitle">PAY WITH</p>
-
                 <a
                   href={`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=thomasbaratti2%40gmail.com&amount=${total}&currency_code=GBP&item_name=${encodeURIComponent("WES PCS — Custom Gaming PC")}`}
                   target="_blank"
@@ -71,15 +69,7 @@ export default function CartPage() {
                   Pay via PayPal 🔒
                 </a>
 
-                <div className="orDivider"><span>or</span></div>
-
-                <Link href="/bank-transfer" className="bankBtn">
-                  Pay via Bank Transfer
-                </Link>
-
-                <p className="payNote">
-                  PayPal includes buyer protection. Bank transfer available on request — we confirm everything before payment.
-                </p>
+                <p className="payNote">🔒 Secure checkout · Buyer protected via PayPal</p>
 
                 <button className="clearBtn" onClick={clearCart}>
                   Clear Cart
@@ -266,13 +256,6 @@ export default function CartPage() {
           letter-spacing: -1px;
         }
 
-        .payTitle {
-          font-size: 10px;
-          color: #333;
-          letter-spacing: 3px;
-          font-weight: 600;
-        }
-
         .checkoutBtn {
           display: block;
           text-align: center;
@@ -289,37 +272,6 @@ export default function CartPage() {
           opacity: 0.85;
           transform: translateY(-2px);
         }
-
-        .orDivider {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          color: #333;
-          font-size: 12px;
-        }
-
-        .orDivider::before,
-        .orDivider::after {
-          content: "";
-          flex: 1;
-          height: 1px;
-          background: rgba(255,255,255,0.06);
-        }
-
-        .bankBtn {
-          display: block;
-          text-align: center;
-          padding: 14px;
-          background: transparent;
-          color: #aaa;
-          border-radius: 12px;
-          font-size: 14px;
-          font-weight: 600;
-          border: 1px solid rgba(255,255,255,0.1);
-          transition: color 0.2s ease, border-color 0.2s ease;
-        }
-
-        .bankBtn:hover { color: #fff; border-color: rgba(255,255,255,0.25); }
 
         .payNote {
           font-size: 11px;
