@@ -4,7 +4,6 @@ import { builds } from "../../data/builds";
 import Navbar from "../../components/Navbar";
 import useScrollReveal from "../../components/useScrollReveal";
 import Link from "next/link";
-import Image from "next/image";
 import { useCart } from "../../context/CartContext";
 import { use, useState } from "react";
 
@@ -61,11 +60,6 @@ export default function BuildPage({ params }: { params: Promise<{ id: string }> 
           </div>
 
           <div className="heroRight">
-            {build.image && (
-              <div className="buildImg">
-                <Image src={build.image} alt={build.name} fill style={{ objectFit: "contain" }} />
-              </div>
-            )}
             <div className="priceBox">
               <p className="priceLabel">Starting from</p>
               <p className="price">{build.price}</p>
@@ -211,16 +205,6 @@ export default function BuildPage({ params }: { params: Promise<{ id: string }> 
           font-size: 15px;
           line-height: 1.75;
           max-width: 520px;
-        }
-
-        .buildImg {
-          position: relative;
-          width: 100%;
-          height: 260px;
-          border-radius: 16px;
-          overflow: hidden;
-          background: #fff;
-          margin-bottom: 16px;
         }
 
         /* Price box */

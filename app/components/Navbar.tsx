@@ -19,6 +19,8 @@ export default function Navbar() {
           <Link href="/" className="link">Home</Link>
           <Link href="/builds" className="link">Builds</Link>
           <Link href="/configurator" className="link">Configurator</Link>
+          <Link href="/about" className="link">About</Link>
+          <Link href="/faq" className="link">FAQ</Link>
         </div>
 
         {/* Desktop right */}
@@ -44,6 +46,8 @@ export default function Navbar() {
             <Link href="/" className="dLink" onClick={close}>Home</Link>
             <Link href="/builds" className="dLink" onClick={close}>Builds</Link>
             <Link href="/configurator" className="dLink" onClick={close}>Configurator</Link>
+            <Link href="/about" className="dLink" onClick={close}>About</Link>
+            <Link href="/faq" className="dLink" onClick={close}>FAQ</Link>
             <Link href="/cart" className="dLink" onClick={close}>
               Cart {cart.length > 0 && <span className="dBadge">{cart.length}</span>}
             </Link>

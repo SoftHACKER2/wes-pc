@@ -18,6 +18,13 @@ export async function POST(req: Request) {
       text: `NEW PC REQUEST\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 
+    await resend.emails.send({
+      from: "WES PCS <onboarding@resend.dev>",
+      to: email,
+      subject: "We've received your request — WES PCS",
+      text: `Hi ${name},\n\nThanks for reaching out to WES PCS! We've received your request and will get back to you within 24 hours with a full quote.\n\nIn the meantime, feel free to message Wes directly on WhatsApp: +44 7395 530 395\n\nYour request details:\n${message}\n\nSpeak soon,\nWes\nWES PCS`,
+    });
+
     return Response.json({ success: true });
   } catch (error: any) {
     return Response.json(

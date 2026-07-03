@@ -6,6 +6,7 @@ import Stats from "./components/Stats";
 import FeaturedBuilds from "./components/FeaturedBuilds";
 import HowItWorks from "./components/HowItWorks";
 import TrustBadges from "./components/TrustBadges";
+import Testimonials from "./components/Testimonials";
 import useScrollReveal from "./components/useScrollReveal";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyChooseUs />
       <Stats />
       <FeaturedBuilds />
+      <Testimonials />
       <HowItWorks />
       <TrustBadges />
     </>

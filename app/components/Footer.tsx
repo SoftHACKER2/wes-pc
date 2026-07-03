@@ -24,7 +24,16 @@ export default function Footer() {
           <div className="col">
             <p className="heading">Pages</p>
             <Link href="/configurator">PC Configurator</Link>
+            <Link href="/about">About</Link>
+            <Link href="/faq">FAQ</Link>
             <Link href="/cart">Your Cart</Link>
+          </div>
+
+          <div className="col">
+            <p className="heading">Contact</p>
+            <a href="https://wa.me/447395530395" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://instagram.com/thomas.brt32" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="mailto:thomasbaratti2@gmail.com">Email Us</a>
           </div>
         </div>
       </div>

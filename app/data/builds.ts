@@ -1,7 +1,7 @@
 export const builds = [
   {
     id: "budget",
-    image: "/budget-killer.png",
+    image: null,
     name: "Budget Killer",
     tagline: "Smooth 1080p gaming without breaking the bank.",
     price: "£799",
@@ -45,7 +45,7 @@ export const builds = [
   },
   {
     id: "high",
-    image: "/gaming-beast.png",
+    image: null,
     name: "Gaming Beast",
     tagline: "High FPS 1440p and silky smooth 4K.",
     price: "£1,600",
