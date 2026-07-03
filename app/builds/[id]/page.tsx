@@ -5,13 +5,20 @@ import Navbar from "../../components/Navbar";
 import useScrollReveal from "../../components/useScrollReveal";
 import Link from "next/link";
 import { useCart } from "../../context/CartContext";
-import { use } from "react";
+import { use, useState } from "react";
 
 export default function BuildPage({ params }: { params: Promise<{ id: string }> }) {
   useScrollReveal();
   const { id } = use(params);
   const build = builds.find((b) => b.id === id);
   const { addToCart } = useCart();
+  const [added, setAdded] = useState(false);
+
+  function handleAddToCart() {
+    addToCart({ name: build!.name, price: build!.priceNum });
+    setAdded(true);
+    setTimeout(() => setAdded(false), 2000);
+  }
 
   if (!build) {
     return (
@@ -58,18 +65,15 @@ export default function BuildPage({ params }: { params: Promise<{ id: string }> 
               <p className="price">{build.price}</p>
               <p className="priceNote">Fully built, tested & shipped to your door.</p>
 
-              <a
-                href={`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=thomasbaratti2%40gmail.com&amount=${build.priceNum}&currency_code=GBP&item_name=${encodeURIComponent(build.name + " - Custom PC")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btnPaypal"
+              <button
+                className={`btnPrimary ${added ? "btnAdded" : ""}`}
+                onClick={handleAddToCart}
               >
-                Buy Now — PayPal
-              </a>
+                {added ? "✓ Added to Cart" : "Add to Cart"}
+              </button>
               <Link href="/configurator" className="btnSecondary">
                 Request Custom Build
               </Link>
-              <p className="paypalNote">🔒 Secure checkout via PayPal · Buyer protected</p>
             </div>
           </div>
         </div>
@@ -236,7 +240,7 @@ export default function BuildPage({ params }: { params: Promise<{ id: string }> 
           border-bottom: 1px solid rgba(255,255,255,0.06);
         }
 
-        .btnPaypal {
+        .btnPrimary {
           display: block;
           width: 100%;
           padding: 14px;
@@ -245,20 +249,19 @@ export default function BuildPage({ params }: { params: Promise<{ id: string }> 
           color: #000;
           font-size: 14px;
           font-weight: 700;
+          border: none;
+          cursor: pointer;
           text-align: center;
-          transition: opacity 0.2s ease, transform 0.2s ease;
+          transition: opacity 0.2s ease, transform 0.2s ease, background 0.3s ease;
+          font-family: inherit;
         }
 
-        .btnPaypal:hover {
-          opacity: 0.85;
-          transform: translateY(-2px);
-        }
+        .btnPrimary:hover { opacity: 0.85; transform: translateY(-2px); }
 
-        .paypalNote {
-          font-size: 11px;
-          color: #333;
-          text-align: center;
-          line-height: 1.5;
+        .btnAdded {
+          background: #1a1a1a;
+          color: #4caf50;
+          border: 1px solid #4caf50;
         }
 
         .btnSecondary {

@@ -5,10 +5,18 @@ import Link from "next/link";
 import { builds } from "../data/builds";
 import useScrollReveal from "../components/useScrollReveal";
 import { useCart } from "../context/CartContext";
+import { useState } from "react";
 
 export default function BuildsPage() {
   useScrollReveal();
   const { addToCart } = useCart();
+  const [addedId, setAddedId] = useState<string | null>(null);
+
+  function handleAdd(b: typeof builds[0]) {
+    addToCart({ name: b.name, price: b.priceNum });
+    setAddedId(b.id);
+    setTimeout(() => setAddedId(null), 2000);
+  }
 
   return (
     <>
@@ -81,19 +89,16 @@ export default function BuildsPage() {
 
               {/* Buttons */}
               <div className="btns">
-                <a
-                  href={`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=thomasbaratti2%40gmail.com&amount=${b.priceNum}&currency_code=GBP&item_name=${encodeURIComponent(b.name + " - Custom PC")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btnCart"
+                <button
+                  className={`btnCart ${addedId === b.id ? "btnAdded" : ""}`}
+                  onClick={() => handleAdd(b)}
                 >
-                  Buy Now — PayPal
-                </a>
+                  {addedId === b.id ? "✓ Added" : "Add to Cart"}
+                </button>
                 <Link href={`/builds/${b.id}`} className="btnDetails">
                   Full Details
                 </Link>
               </div>
-              <p className="payNote">🔒 Buyer protected via PayPal</p>
 
             </div>
           ))}
@@ -233,11 +238,10 @@ export default function BuildsPage() {
 
         .btnCart:active { opacity: 0.8; }
 
-        .payNote {
-          font-size: 10px;
-          color: #333;
-          text-align: center;
-          margin-top: -4px;
+        .btnAdded {
+          background: #1a1a1a !important;
+          color: #4caf50 !important;
+          border: 1px solid #4caf50 !important;
         }
 
         .btnDetails {
