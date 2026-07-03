@@ -45,7 +45,7 @@ export const builds = [
   },
   {
     id: "high",
-    image: null,
+    image: "/gaming-beast.png",
     name: "Gaming Beast",
     tagline: "High FPS 1440p and silky smooth 4K.",
     price: "£1,600",
