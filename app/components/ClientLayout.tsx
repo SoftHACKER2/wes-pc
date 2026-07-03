@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import FloatingWhatsApp from "./FloatingWhatsApp";
 import PageTransition from "./PageTransition";
 import CookieBanner from "./CookieBanner";
+import ExitIntent from "./ExitIntent";
 import { ReactNode } from "react";
 
 export default function ClientLayout({ children }: { children: ReactNode }) {
@@ -16,6 +17,7 @@ export default function ClientLayout({ children }: { children: ReactNode }) {
       <Footer />
       <FloatingWhatsApp />
       <CookieBanner />
+      <ExitIntent />
     </CartProvider>
   );
 }

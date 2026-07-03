@@ -40,6 +40,7 @@ export default function BuildsPage() {
 
               {b.badge === "Most Popular" && <div className="popularBadge">★ Most Popular</div>}
               {b.badge === "Top Tier" && <div className="topBadge">Top Tier</div>}
+              <div className="slots">⚡ 2 slots left this month</div>
 
               {/* Top row: name + price */}
               <div className="cardHead">
@@ -108,8 +109,8 @@ export default function BuildsPage() {
         <div className="cta reveal">
           <p className="ctaEye">NOT SURE WHICH TO PICK?</p>
           <h3>Let us help you decide</h3>
-          <p className="ctaSub">Tell us your budget and what you play — we&apos;ll find the perfect build.</p>
-          <Link href="/configurator" className="ctaBtn">Use the Configurator →</Link>
+          <p className="ctaSub">Answer 3 quick questions and we&apos;ll tell you exactly which build suits you.</p>
+          <Link href="/quiz" className="ctaBtn">Take the Quiz →</Link>
         </div>
 
       </main>
@@ -170,6 +171,16 @@ export default function BuildsPage() {
         .topBadge {
           background: rgba(255,255,255,0.08); color: #888;
           border: 1px solid rgba(255,255,255,0.14);
+        }
+
+        .slots {
+          position: absolute; top: -12px; right: 16px;
+          font-size: 9px; font-weight: 700;
+          padding: 3px 10px; border-radius: 20px;
+          background: rgba(255,200,0,0.1);
+          color: #c8a000;
+          border: 1px solid rgba(255,200,0,0.2);
+          letter-spacing: 0.5px;
         }
 
         /* Card head */

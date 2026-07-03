@@ -25,6 +25,35 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MLXFXP4JH" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0MLXFXP4JH');`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "WES PCS",
+              "description": "Hand-built custom gaming PCs for every budget. Built, tested and shipped across the UK.",
+              "url": "https://wes-pc.vercel.app",
+              "telephone": "+447395530395",
+              "email": "thomasbaratti2@gmail.com",
+              "address": { "@type": "PostalAddress", "addressCountry": "GB" },
+              "priceRange": "£799 – £2,400",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "reviewCount": "50"
+              }
+            })
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <ClientLayout>{children}</ClientLayout>
       </body>

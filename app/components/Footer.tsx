@@ -24,9 +24,13 @@ export default function Footer() {
           <div className="col">
             <p className="heading">Pages</p>
             <Link href="/configurator">PC Configurator</Link>
+            <Link href="/quiz">Find My Build Quiz</Link>
+            <Link href="/compare">Compare Builds</Link>
+            <Link href="/blog">Blog & Guides</Link>
             <Link href="/about">About</Link>
             <Link href="/faq">FAQ</Link>
-            <Link href="/cart">Your Cart</Link>
+            <Link href="/after-order">After You Order</Link>
+            <Link href="/contact">Contact</Link>
           </div>
 
           <div className="col">
