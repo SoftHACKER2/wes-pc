@@ -81,16 +81,19 @@ export default function BuildsPage() {
 
               {/* Buttons */}
               <div className="btns">
-                <button
+                <a
+                  href={`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=thomasbaratti2%40gmail.com&amount=${b.priceNum}&currency_code=GBP&item_name=${encodeURIComponent(b.name + " - Custom PC")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btnCart"
-                  onClick={() => addToCart({ name: b.name, price: b.priceNum })}
                 >
-                  Add to Cart
-                </button>
+                  Buy Now — PayPal
+                </a>
                 <Link href={`/builds/${b.id}`} className="btnDetails">
                   Full Details
                 </Link>
               </div>
+              <p className="payNote">🔒 Buyer protected via PayPal</p>
 
             </div>
           ))}
@@ -229,6 +232,13 @@ export default function BuildsPage() {
         }
 
         .btnCart:active { opacity: 0.8; }
+
+        .payNote {
+          font-size: 10px;
+          color: #333;
+          text-align: center;
+          margin-top: -4px;
+        }
 
         .btnDetails {
           display: block; text-align: center; padding: 14px;
