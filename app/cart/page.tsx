@@ -73,12 +73,9 @@ export default function CartPage() {
 
                 <div className="orDivider"><span>or</span></div>
 
-                <a
-                  href="mailto:thomasbaratti2@gmail.com"
-                  className="bankBtn"
-                >
-                  Request Bank Transfer
-                </a>
+                <Link href="/bank-transfer" className="bankBtn">
+                  Pay via Bank Transfer
+                </Link>
 
                 <p className="payNote">
                   PayPal includes buyer protection. Bank transfer available on request — we confirm everything before payment.
