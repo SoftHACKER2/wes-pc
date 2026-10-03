@@ -1,0 +1,395 @@
+.page {
+  min-height: 100vh;
+  padding: 96px 5% 80px;
+  max-width: 1180px;
+  margin: 0 auto;
+  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ── Masthead ───────────────────────── */
+.masthead {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 14px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.mastName {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  color: #888;
+  margin-bottom: 14px;
+}
+
+.mastRule {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: #444;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 12px;
+}
+
+/* ── Lead ───────────────────────────── */
+.lead {
+  max-width: 820px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.kicker {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #ff3b5c;
+  margin-bottom: 18px;
+}
+
+.lead h1 {
+  font-size: clamp(34px, 6vw, 64px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+}
+
+.standfirst {
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-style: italic;
+  color: #9a9a9a;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.byline {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #555;
+}
+
+.dot { color: #333; }
+
+/* ── Hero figure ────────────────────── */
+.heroFig { margin: 0 auto 56px; }
+
+.heroArt {
+  position: relative;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background:
+    radial-gradient(circle at 25% 30%, rgba(37, 244, 238, 0.14), transparent 45%),
+    radial-gradient(circle at 75% 70%, rgba(254, 44, 85, 0.16), transparent 45%),
+    #0d0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone {
+  position: relative;
+  width: 190px;
+  height: 330px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(180deg, #151515, #0a0a0a);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 6px 0 0 -2px rgba(254, 44, 85, 0.5), -6px 0 0 -2px rgba(37, 244, 238, 0.5);
+  overflow: hidden;
+  animation: floatGlow 6s ease-in-out infinite;
+}
+
+.phoneTop {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.phoneGlow {
+  position: absolute;
+  inset: 70px 30px 110px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0 2px, transparent 2px 14px),
+    linear-gradient(135deg, rgba(37, 244, 238, 0.25), rgba(254, 44, 85, 0.25));
+}
+
+.phoneCaption {
+  position: absolute;
+  left: 14px;
+  right: 44px;
+  bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 10px;
+  color: #aaa;
+  line-height: 1.35;
+}
+
+.phoneCaption strong { color: #fff; font-size: 11px; }
+
+.phoneIcons {
+  position: absolute;
+  right: 12px;
+  bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.heroFig figcaption {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ── Layout ─────────────────────────── */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-bottom: 72px;
+}
+
+.body {
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.75;
+  color: #c9c9c9;
+}
+
+.body p { margin-bottom: 22px; }
+
+.body h2 {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+  margin: 44px 0 16px;
+}
+
+.dropcap::first-letter {
+  float: left;
+  font-size: 76px;
+  line-height: 0.85;
+  padding: 6px 10px 0 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.pull {
+  margin: 40px 0;
+  padding: 4px 0 4px 22px;
+  border-left: 3px solid #ff3b5c;
+}
+
+.pull p {
+  font-size: clamp(22px, 3vw, 28px);
+  font-style: italic;
+  line-height: 1.35;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pull cite {
+  font-family: Inter, system-ui, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+/* ── Formats inset ──────────────────── */
+.inset {
+  font-family: Inter, system-ui, sans-serif;
+  margin: 40px 0;
+  padding: 26px 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.insetLabel,
+.cardLabel {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #444;
+  margin-bottom: 18px !important;
+}
+
+.formats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.format h3 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  margin: 8px 0 6px;
+}
+
+.format p {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #666;
+  margin: 0;
+}
+
+.formatTag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #25f4ee;
+  background: rgba(37, 244, 238, 0.07);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.endmark {
+  font-size: 12px;
+  color: #ff3b5c;
+}
+
+/* ── Sidebar ────────────────────────── */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  padding: 24px 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.facts { display: flex; flex-direction: column; margin-bottom: 20px; }
+
+.facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 13px;
+}
+
+.facts dt { color: #555; }
+.facts dd { color: #ddd; font-weight: 600; text-align: right; }
+
+.tiktokBtn,
+.primaryBtn,
+.ghostBtn {
+  display: block;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.tiktokBtn,
+.primaryBtn { background: #fff; color: #000; }
+.tiktokBtn:hover,
+.primaryBtn:hover { opacity: 0.85; }
+
+.ghostBtn {
+  color: #aaa;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.ghostBtn:hover { color: #fff; border-color: rgba(255, 255, 255, 0.25); }
+
+.timeline {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  padding-left: 16px;
+}
+
+.timeline li { display: flex; flex-direction: column; gap: 4px; position: relative; }
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff3b5c;
+}
+
+.tlYear { font-size: 11px; font-weight: 800; letter-spacing: 1px; color: #fff; }
+.tlText { font-size: 13px; color: #666; line-height: 1.55; }
+
+/* ── Enquiries ──────────────────────── */
+.enquiries {
+  text-align: center;
+  padding: 52px 24px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.enquiries h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+
+.enqSub {
+  max-width: 520px;
+  margin: 0 auto 28px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.enqBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ── Desktop ────────────────────────── */
+@media (min-width: 769px) {
+  .page { padding: 112px 5% 100px; }
+  .heroArt { height: 460px; }
+  .phone { width: 220px; height: 390px; }
+  .formats { grid-template-columns: 1fr 1fr; }
+  .enqBtns { flex-direction: row; max-width: none; justify-content: center; }
+}
+
+@media (min-width: 1024px) {
+  .layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 64px; }
+  .sidebar { position: sticky; top: 96px; align-self: start; }
+}

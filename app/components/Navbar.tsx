@@ -52,6 +52,7 @@ export default function Navbar() {
             <Link href="/quiz" className="dLink" onClick={close}>Find My Build Quiz</Link>
             <Link href="/compare" className="dLink" onClick={close}>Compare Builds</Link>
             <Link href="/blog" className="dLink" onClick={close}>Blog</Link>
+            <Link href="/press" className="dLink" onClick={close}>Press</Link>
             <Link href="/about" className="dLink" onClick={close}>About</Link>
             <Link href="/faq" className="dLink" onClick={close}>FAQ</Link>
             <Link href="/contact" className="dLink" onClick={close}>Contact</Link>

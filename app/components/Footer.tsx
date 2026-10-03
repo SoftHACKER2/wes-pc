@@ -27,6 +27,7 @@ export default function Footer() {
             <Link href="/quiz">Find My Build Quiz</Link>
             <Link href="/compare">Compare Builds</Link>
             <Link href="/blog">Blog & Guides</Link>
+            <Link href="/press">Press & TikTok</Link>
             <Link href="/about">About</Link>
             <Link href="/faq">FAQ</Link>
             <Link href="/after-order">After You Order</Link>
