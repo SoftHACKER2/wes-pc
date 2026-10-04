@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], display: "optional" });
 
 export const metadata: Metadata = {
   title: "WES PCS — Custom Gaming PCs, Built in the UK",
-  description: "Hand-built custom gaming PCs for every budget. Built, tested and shipped across the UK by Wes — a passionate PC builder with 5 years experience. PayPal protected payments.",
+  description: "Hand-built custom gaming PCs for every budget. Built, tested and shipped across the UK by Wes — a passionate PC builder with 7 years experience. PayPal protected payments.",
   keywords: "custom gaming PC UK, custom PC builder UK, gaming PC cheap UK, custom built PC, budget gaming PC UK, WES PCS",
   openGraph: {
     title: "WES PCS — Custom Gaming PCs, Built in the UK",

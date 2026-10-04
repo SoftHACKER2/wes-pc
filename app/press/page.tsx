@@ -11,7 +11,7 @@ const TIKTOK_URL = "https://www.tiktok.com/@weestech";
 export const metadata: Metadata = {
   title: "Press — @weestech on TikTok | WES PCS Newsroom",
   description:
-    "The story behind @weestech: how a 16-year-old UK PC builder turned a bedroom workbench into a TikTok channel about honest, hand-built gaming PCs.",
+    "The story behind @weestech: how a 18-year-old UK PC builder turned a bedroom workbench into a TikTok channel about honest, hand-built gaming PCs.",
   openGraph: {
     title: "Inside @weestech — the teenage PC builder making tech feel human",
     description: "A feature from the WES PCS newsroom on the TikTok channel behind the builds.",
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 const timeline = [
   { year: "Age 11", text: "Takes apart his first computer to see how it works. It goes back together. Mostly." },
   { year: "Age 13", text: "Starts building machines for friends and family, learning on every mistake." },
-  { year: "Age 15", text: "Launches WES PCS — hand-built gaming PCs, tested before they ship." },
-  { year: "Age 16", text: "Takes the workbench public on TikTok as @weestech." },
+  { year: "Launch", text: "Starts WES PCS — hand-built gaming PCs, tested before they ship." },
+  { year: "Age 18", text: "Takes the workbench public on TikTok as @weestech." },
 ];
 
 const formats = [
@@ -71,7 +71,7 @@ export default function PressPage() {
             The bedroom workbench that&apos;s teaching TikTok how a PC should be built
           </h1>
           <p className={`${styles.standfirst} ${serif.className}`}>
-            At 16, Wes has spent five years building computers. Now he&apos;s filming it — and making the case that
+            At 18, Wes has spent seven years building computers. Now he&apos;s filming it — and making the case that
             good tech doesn&apos;t need hype, just someone who cares about getting it right.
           </p>
           <div className={styles.byline}>
@@ -115,7 +115,7 @@ export default function PressPage() {
             </p>
 
             <p>
-              The channel belongs to Wes, a 16-year-old builder from the UK who runs WES PCS, a small business making
+              The channel belongs to Wes, a 18-year-old builder from the UK who runs WES PCS, a small business making
               custom gaming computers by hand. His TikTok isn&apos;t a studio operation. There&apos;s no warehouse in the
               background and no script on a teleprompter. It&apos;s a desk, a camera, good lighting when he can get it,
               and someone who clearly knows what he&apos;s doing.
@@ -227,7 +227,7 @@ export default function PressPage() {
             <h2>What comes next</h2>
 
             <p>
-              Wes is still sixteen, still building, and still figuring out what the channel becomes. More budget
+              Wes is eighteen, still building, and still figuring out what the channel becomes. More budget
               builds are on the way, more head-to-head part comparisons, and more of the behind-the-scenes work that
               goes into getting a PC out the door. The goal hasn&apos;t changed since he was eleven: help people get a
               great computer for a fair price.
@@ -248,7 +248,7 @@ export default function PressPage() {
               <dl className={styles.facts}>
                 <div><dt>Channel</dt><dd>@weestech</dd></div>
                 <div><dt>Platform</dt><dd>TikTok</dd></div>
-                <div><dt>Creator</dt><dd>Wes, 16</dd></div>
+                <div><dt>Creator</dt><dd>Wes, 18</dd></div>
                 <div><dt>Based</dt><dd>United Kingdom</dd></div>
                 <div><dt>Building since</dt><dd>Age 11</dd></div>
                 <div><dt>Builds completed</dt><dd>50+</dd></div>
@@ -279,7 +279,7 @@ export default function PressPage() {
           <h2 className={serif.className}>Press &amp; media enquiries</h2>
           <p className={styles.enqSub}>
             Writing about young founders, UK tech, or the creator economy? Wes is happy to talk about building PCs,
-            running a business at 16, and growing @weestech. Interviews, quotes, collaborations and photos are
+            running a business as a teenager, and growing @weestech. Interviews, quotes, collaborations and photos are
             available on request.
           </p>
           <div className={styles.enqBtns}>

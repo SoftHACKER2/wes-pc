@@ -14,7 +14,7 @@ export default function AboutPage() {
             <p className="eyebrow">ABOUT WES PCS</p>
             <h1>Built by someone who actually knows what they&apos;re doing</h1>
             <p className="desc">
-              Hi, I&apos;m Wes — a 16 year old PC builder with 5 years of hands-on experience. What started as a passion for understanding how computers work has turned into a small business built on one simple idea: everyone deserves a great PC at a fair price, built by someone who genuinely cares.
+              Hi, I&apos;m Wes — an 18 year old PC builder with 7 years of hands-on experience. What started as a passion for understanding how computers work has turned into a small business built on one simple idea: everyone deserves a great PC at a fair price, built by someone who genuinely cares.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function AboutPage() {
 
         <div className="stats reveal-stagger">
           {[
-            { val: "5+", label: "Years Building" },
+            { val: "7+", label: "Years Building" },
             { val: "50+", label: "Builds Completed" },
             { val: "100%", label: "Tested Before Shipping" },
             { val: "24h", label: "Support Response" },
