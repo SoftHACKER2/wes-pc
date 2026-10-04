@@ -393,3 +393,63 @@
   .layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 64px; }
   .sidebar { position: sticky; top: 96px; align-self: start; }
 }
+
+/* ── Newsroom extras ────────────────── */
+.cardText { font-size: 13px; color: #666; line-height: 1.6; margin-bottom: 16px; }
+
+.more { list-style: none; display: flex; flex-direction: column; }
+
+.more li a {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.more li:last-child a { border-bottom: none; }
+
+.moreTag { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #ff3b5c; }
+.moreTitle { font-size: 14px; font-weight: 600; color: #ccc; line-height: 1.4; transition: color 0.2s ease; }
+.more li a:hover .moreTitle { color: #fff; }
+
+.q {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  margin: 36px 0 12px !important;
+  padding-left: 14px;
+  border-left: 3px solid #25f4ee;
+}
+
+.step {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 44px 0 14px;
+}
+
+.stepNum {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ff3b5c;
+}
+
+.step h2 { margin: 0 !important; }
+
+.note {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px !important;
+  color: #666 !important;
+  line-height: 1.7;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+a.mastName { display: block; }
+.note a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }

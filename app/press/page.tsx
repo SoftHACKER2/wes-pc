@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Newsreader } from "next/font/google";
 import styles from "./press.module.css";
+import { MoreArticles } from "./ArticleShell";
 
 const serif = Newsreader({ subsets: ["latin"], display: "optional", style: ["normal", "italic"] });
 
@@ -11,7 +12,7 @@ const TIKTOK_URL = "https://www.tiktok.com/@weestech";
 export const metadata: Metadata = {
   title: "Press — @weestech on TikTok | WES PCS Newsroom",
   description:
-    "The story behind @weestech: how a 18-year-old UK PC builder turned a bedroom workbench into a TikTok channel about honest, hand-built gaming PCs.",
+    "The story behind @weestech: how an 18-year-old UK PC builder turned a bedroom workbench into a TikTok channel about honest, hand-built gaming PCs.",
   openGraph: {
     title: "Inside @weestech — the teenage PC builder making tech feel human",
     description: "A feature from the WES PCS newsroom on the TikTok channel behind the builds.",
@@ -269,6 +270,10 @@ export default function PressPage() {
                   </li>
                 ))}
               </ol>
+            </div>
+            <div className={styles.card}>
+              <p className={styles.cardLabel}>MORE FROM THE NEWSROOM</p>
+              <MoreArticles current="/press" />
             </div>
           </aside>
         </div>
